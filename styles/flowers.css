@@ -15,8 +15,50 @@
   font-variation-settings:
     "wdth" 100;
 }
+.section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
+.text-off-white{
+    color: #8987A1;;
+}
 
-.text-primary{
+.text-dark{
+    color: #000000;
+}
+
+/* navbar style */
+.nav-bar{
+
+    /* border: 2px tan solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 48px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+   
+}
+#home{
+    color: #252432;
+    font-weight: bold;
 
 }
+
+/* mobile responsive */
+@media screen and (max-width:576px) {
+    .hide-for-the-good{
+        display: none;
+    }
+}
+   
