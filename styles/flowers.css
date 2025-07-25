@@ -1,64 +1,134 @@
 /* shared style */
-
-
-.inter-font{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+*{
+    margin: 0;
+    padding: 0;
 }
-.noto-serif-font{
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-.section{
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.section {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.text-off-white{
-    color: #8987A1;;
+.text-off-white {
+    color: #8987A1;
+    ;
 }
 
-.text-dark{
+.text-dark {
     color: #000000;
 }
 
+.text-primary {
+    color: #E95A08;
+}
+
 /* navbar style */
-.nav-bar{
+.nav-bar {
 
     /* border: 2px tan solid; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     gap: 48px;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
-   
+
 }
-#home{
+
+#home {
     color: #252432;
     font-weight: bold;
 
 }
 
+/* banner section */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.banner-details {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
 /* mobile responsive */
 @media screen and (max-width:576px) {
-    .hide-for-the-good{
+    .hide-for-the-good {
         display: none;
     }
+
+    .nav-bar {
+        margin: auto 16px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+       
+    }
+
+    .banner-text {
+        max-height: 150px;
+        margin: 30px 16px 65px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-details {
+        font-size: 1rem;
+    }
+
+    
 }
-   
